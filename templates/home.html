@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/sign" method="POST">
+  <h1>SignIN</h1>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="name" value="John"><br>
+  <label for="lname">email:</label><br>
+  <input type="text" id="lname" name="email" value="Doe"><br><br>
+
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" name="password">
+  <input type="submit" value="Submit">
+</form> 
+
+<h1>
+  {% if error  %}
+        {{ error }}
+    {% endif %}  
+</h1>
+
+
+<form action="/login" method="POST">
+ <h1>Login</h1>
+  <label for="lname">email:</label><br>
+  <input type="text" id="lname" name="email" value="Doe"><br><br>
+
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" name="password">
+  <input type="submit" value="Submit">
+</form> 
+
+<h1>
+  {% if error2  %}
+        {{ error2 }}
+    {% endif %}  
+</h1>
+
+
+
+</body>
+</html>

@@ -1,18 +1,38 @@
+# Read Me Template
 
-Requirements
+---
 
 
+## Description
+
+This a login page to test out the Flask framework.A project for beginners.
+#### Technologies
+
+- Flask
+- MongoDB
+- Python
+
+[Back To The Top](#read-me-template)
+
+---
+
+## How To Use
+
+To signin just enter your name,email and it gets saved in a database.Then further you can login with the same credentials to access the dashboard.
+
+#### Installation
 
 pip install pymongo
 
 pip install flask
 
 
+[Back To The Top](#read-me-template)
 
-Connectinf with MongoDb
+---
 
 
-
+## Connecting with MongoDb
 Creating Database (in MongoDB Atlas)
 Go to the MongoDB Atlas site and log in.
 Create a new project, name it as you like (eg. Kenobi).
@@ -25,21 +45,19 @@ Once it's created, click on "Connect".
 On the screen that follows, click on "Add your current IP address" for the section "Whitelist your connection IP address". Under that, in the "Create a MongoDB User" section, add a username and password, and note it down. Then, click on "Choose a connection method".
 On the "Choose a connection method" tab, select "Connect your application"and copy the connection string that proceeds it.
 
-Go to your project folder. Go to the Server directory.
-cd Server
-Inside there, create a new file and name it '.env', or run in the terminal
-touch .env
-Open the .env file in a text editor you prefer and copy
-ATLAS_URI=<insert the connection string here> Save the file.
+Go to your project folder. Go to the main python file directory.
 
-In the terminal, run
-nodemon server.js
-If nodemon is not installed, run
-node server.js
+ATLAS_URI=<insert the connection string here> Save the file.
 You should be able to see the message
 MongoDB connection established
 if it all went smooth.
   
-To run this project
+
+In the terminal, run
+python main.py
   
-  python main.py
+  
+  
+[Back To The Top](#read-me-template)
+
+---
